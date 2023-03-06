@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5115908261995603869}
   - component: {fileID: 2049405846533178663}
   - component: {fileID: 5355493583306813440}
+  - component: {fileID: -7208609379061061468}
   m_Layer: 0
   m_Name: PlayerSwan
   m_TagString: Untagged
@@ -133,3 +134,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-7208609379061061468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5115908261995603868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0e47354101e44b29a679dcc7b2ab935, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  horizontal: 0
+  vertical: 0
+  runSpeed: 5
