@@ -13,9 +13,6 @@ public class GameManager : MonoBehaviour
     public GameObject creditsScreen;
     public GameObject tutorialScreen;
     public GameObject endScreen;
-    public GameObject maze1;
-    public GameObject maze2;
-    public GameObject maze3;
     public GameObject canvas;
     public GameObject eventSystem;
     public GameObject curtain;
@@ -95,6 +92,17 @@ public class GameManager : MonoBehaviour
     public void ReturnToStartScreen() {
         creditsScreen.SetActive(false);
         tutorialScreen.SetActive(false);
+        titleScreen.SetActive(true);
+    }
+
+    public void startGame() {
+        StartCoroutine(LoadYourAsyncScene("Maze1"));
+        titleScreen.SetActive(false);
+    }
+
+
+    public void gameOver() {
+        StartCoroutine(LoadYourAsyncScene("titleScreen"));
         titleScreen.SetActive(true);
     }
 
