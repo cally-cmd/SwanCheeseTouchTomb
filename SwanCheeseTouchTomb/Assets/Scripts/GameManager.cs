@@ -18,6 +18,26 @@ public class GameManager : MonoBehaviour
     public GameObject curtain;
     private bool raiseLower = false;
 
+    public GameObject dialogBox;
+    public TextMeshProUGUI dialogText;
+
+    public void DialogShow(string text) {
+        dialogBox.SetActive(true);
+        StopAllCoroutines();
+        StartCoroutine(TypeText(text));
+    }
+
+    public void DialogHide() {
+        dialogBox.SetActive(false);
+    }
+
+    IEnumerator TypeText(string text) {
+        dialogText.text = "";
+        foreach (char c in text.ToCharArray()) {
+            dialogText.text += c;
+            yield return new WaitForSeconds(0.02f);
+        }
+    }
 
 // Reused from previous lab
 
@@ -92,6 +112,7 @@ public class GameManager : MonoBehaviour
     public void ReturnToStartScreen() {
         creditsScreen.SetActive(false);
         tutorialScreen.SetActive(false);
+        endScreen.SetActive(false);
         titleScreen.SetActive(true);
     }
 
@@ -103,7 +124,7 @@ public class GameManager : MonoBehaviour
 
     public void gameOver() {
         StartCoroutine(LoadYourAsyncScene("titleScreen"));
-        titleScreen.SetActive(true);
+        endScreen.SetActive(true);
     }
 
 
