@@ -97,6 +97,7 @@ public class GameManager : MonoBehaviour
         }
 
         StartCoroutine(ColorLerpFunction(false, 1));
+
     }
 
     public void TutorialScreen() {
