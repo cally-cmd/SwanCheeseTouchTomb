@@ -82,6 +82,23 @@ public class GameManager : MonoBehaviour
         StartCoroutine(ColorLerpFunction(false, 1));
     }
 
+    public void TutorialScreen() {
+        titleScreen.SetActive(false);
+        tutorialScreen.SetActive(true);
+    }
+
+    public void CreditsScreen() {
+        titleScreen.SetActive(false);
+        creditsScreen.SetActive(true);
+    }
+
+    public void ReturnToStartScreen() {
+        creditsScreen.SetActive(false);
+        tutorialScreen.SetActive(false);
+        titleScreen.SetActive(true);
+    }
+
+
 
     // Start is called before the first frame update
     void Start()
