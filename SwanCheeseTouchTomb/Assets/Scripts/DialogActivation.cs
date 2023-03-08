@@ -5,7 +5,7 @@ using UnityEngine;
 public class DialogActivation : MonoBehaviour
 {
 
-    public int level;
+    public int level = 1;
 
 
     public void OnTriggerEnter2D(Collider2D collider2D) {

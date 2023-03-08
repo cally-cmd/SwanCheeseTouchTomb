@@ -1053,6 +1053,7 @@ GameObject:
   - component: {fileID: 1267515289}
   - component: {fileID: 1267515288}
   - component: {fileID: 1267515287}
+  - component: {fileID: 1267515290}
   m_Layer: 0
   m_Name: Goal
   m_TagString: Untagged
@@ -1129,8 +1130,8 @@ TilemapRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 239767887
-  m_SortingLayer: -1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -1212,6 +1213,18 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &1267515290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1267515285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f296032776a1f3d45be5aab17c66bc31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1365852762
 PrefabInstance:
   m_ObjectHideFlags: 0
