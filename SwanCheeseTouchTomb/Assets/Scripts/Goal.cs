@@ -14,7 +14,7 @@ public class Goal : MonoBehaviour
             } else if (level == 2) { 
                 GameManager.Instance.loadMaze3();
             } else {
-                print("to do still");
+                GameManager.Instance.endScreen();
             }
         }
     }

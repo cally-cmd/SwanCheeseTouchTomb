@@ -7,6 +7,8 @@ public class EnemyDucks : MonoBehaviour {
 	public GameObject target;
 	public float speed;
 	public float rotationSpeed;
+	public int level;
+	public AudioSource audioSource;
 
 	private Rigidbody2D body;
 
@@ -31,15 +33,21 @@ public class EnemyDucks : MonoBehaviour {
 		speed *= 1.2f;
 	}
 
-	void OnDrawGizmos() {
-		Gizmos.color = Color.yellow;
-		Vector3 direction = body.velocity;
-		Gizmos.DrawRay(transform.position, direction);
+	// void OnDrawGizmos() {
+	// 	Gizmos.color = Color.yellow;
+	// 	Vector3 direction = body.velocity;
+	// 	Gizmos.DrawRay(transform.position, direction);
+	// }
+
+	IEnumerator duckCollide() {
+		audioSource.Play();
+		return null;
 	}
 
-	void OnCollisionEnter2D(Collision2D coll) {
+	public void OnCollisionEnter2D(Collision2D coll) {
 		if (coll.gameObject == target) {
-			GetComponent<AudioSource>().Play();
+			duckCollide();
+			print("detected collision");
 		}
 	}
 }
