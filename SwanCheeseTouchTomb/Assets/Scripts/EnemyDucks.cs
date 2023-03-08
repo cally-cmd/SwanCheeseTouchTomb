@@ -39,15 +39,23 @@ public class EnemyDucks : MonoBehaviour {
 	// 	Gizmos.DrawRay(transform.position, direction);
 	// }
 
-	IEnumerator duckCollide() {
+	IEnumerator DuckCollide() {
 		audioSource.Play();
 		return null;
 	}
 
 	public void OnCollisionEnter2D(Collision2D coll) {
-		if (coll.gameObject == target) {
-			duckCollide();
-			print("detected collision");
+		if (coll.gameObject.tag == "PlayerSwan") {
+			StartCoroutine("DuckCollide");
+			if (level == 1) {
+				GameManager.Instance.loadMaze1();
+			} else if (level == 2) {
+				GameManager.Instance.loadMaze2();
+			} else if (level == 3) {
+				GameManager.Instance.loadMaze3();
+			} else {
+				print("EnemyDuck OnCollision is not working");
+			}
 		}
 	}
 }
