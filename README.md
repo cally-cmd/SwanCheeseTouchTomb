@@ -6,7 +6,7 @@ The title of our game is `Ducking the Cheese`!
 
 ## Intent
 
-Our intent for making this game is to further improve on the skills that we have been developing in the first, second, and third games while also adding additional functionality, complexity, and aestheticism. We intend to have a fully realized game with necessary menus, looks, sounds, and length. 
+Our intent for making this game is to further improve on the skills that we have been developing in the first, second, and third games while also adding additional functionality, complexity, and aestheticism. We intend to have a fully realized game with necessary menus, looks, sounds, and length.
 
 ## Narrative
 
@@ -30,4 +30,4 @@ The sources for everything we used are available in the credits screen in the ga
 
 ## Contributions
 
-Daniel found or made the assets that were used for the game: audio, background, font, tilemap, and sprite map. He also added the particle system, trail system, and directionality for sprites. I added the information for the credits, help, and partially the end screen. I created the mazes and each of the maps.
+Daniel found or made the assets that were used for the game: audio, background, font, tilemap, and sprite map. He also added the particle system, trail system, and directionality for sprites. I added the information for the credits, help, and partially the end screen. I created the mazes and each of the maps. Rhett programmed the player and camera movement as well as the AI Steering script for the game.
