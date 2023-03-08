@@ -316,7 +316,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '[Insert all art attributions]'
+  m_text: "Sprites: https://lowich.itch.io/free-water-fowl-sprites\nTilemap: https://ninjikin.itch.io/grass\nAudio:
+    https://pixabay.com/music/beautiful-plays-sakura-117030/, \nhttps://pixabay.com/music/adventure-waterfall-140894/,
+    \nhttps://pixabay.com/music/beautiful-plays-my-god-the-grace-instrumental-12009/,\nhttps://pixabay.com/music/beautiful-plays-mountain-path-125573/,
+    \nhttps://pixabay.com/sound-effects/075176-duck-quack-40345/\nTextBox: rectangle
+    clipart PNG Designed By \u5343\u56FE\u7F51 from https://pngtree.com/freepng/rectangular-cartoon-hand-painted-fresh-flower-plant-border-dialog-box-beautiful_4024390.html?sol=downref&id=bef\nBackground:
+    free background photos from https://pngtree.com/freebackground/pink-flower-plant-floral-background_280966.html?sol=downref&id=bef\nDevs:
+    Justin Grubbs, Rhett Booher, Daniel Burnett"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 647e24f575e4f44c9ac90188deb7f179, type: 2}
   m_sharedMaterial: {fileID: 7951017992861281597, guid: 647e24f575e4f44c9ac90188deb7f179, type: 2}
@@ -343,8 +349,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1278,7 +1284,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '[Name of Game]
+  m_text: 'Ducking the Cheese
 
 '
   m_isRightToLeft: 0
@@ -2449,7 +2455,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '[Input How To Play]'
+  m_text: The name of the game is to navigate the swan sprite using WASD or the arrow
+    keys. Avoid getting hit by the ducks, or you won't be able to finish the level!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 647e24f575e4f44c9ac90188deb7f179, type: 2}
   m_sharedMaterial: {fileID: 7951017992861281597, guid: 647e24f575e4f44c9ac90188deb7f179, type: 2}
