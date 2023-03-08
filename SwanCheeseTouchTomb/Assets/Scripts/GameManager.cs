@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
     public GameObject titleScreen;
     public GameObject creditsScreen;
     public GameObject tutorialScreen;
-    public GameObject endScreen;
+    public GameObject victoryScreen;
     public GameObject canvas;
     public GameObject eventSystem;
     public GameObject curtain;
@@ -113,7 +113,7 @@ public class GameManager : MonoBehaviour
     public void ReturnToStartScreen() {
         creditsScreen.SetActive(false);
         tutorialScreen.SetActive(false);
-        endScreen.SetActive(false);
+        victoryScreen.SetActive(false);
         titleScreen.SetActive(true);
     }
 
@@ -122,12 +122,23 @@ public class GameManager : MonoBehaviour
         titleScreen.SetActive(false);
     }
 
-
-    public void gameOver() {
+    public void endScreen() {
         StartCoroutine(LoadYourAsyncScene("titleScreen"));
-        endScreen.SetActive(true);
+        titleScreen.SetActive(false);
+        victoryScreen.SetActive(true);
     }
 
+    public void loadMaze1() {
+        StartCoroutine(LoadYourAsyncScene("Maze1"));
+    }
+
+    public void loadMaze2() {
+        StartCoroutine(LoadYourAsyncScene("Maze2"));
+    }
+
+    public void loadMaze3() { 
+        StartCoroutine(LoadYourAsyncScene("Maze3"));
+    }
 
 
     // Start is called before the first frame update

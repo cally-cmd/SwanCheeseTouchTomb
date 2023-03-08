@@ -7,6 +7,8 @@ public class EnemyDucks : MonoBehaviour {
 	public GameObject target;
 	public float speed;
 	public float rotationSpeed;
+	public int level;
+	public AudioSource audioSource;
 
 	private Rigidbody2D body;
 
@@ -31,15 +33,29 @@ public class EnemyDucks : MonoBehaviour {
 		speed *= 1.2f;
 	}
 
-	void OnDrawGizmos() {
-		Gizmos.color = Color.yellow;
-		Vector3 direction = body.velocity;
-		Gizmos.DrawRay(transform.position, direction);
+	// void OnDrawGizmos() {
+	// 	Gizmos.color = Color.yellow;
+	// 	Vector3 direction = body.velocity;
+	// 	Gizmos.DrawRay(transform.position, direction);
+	// }
+
+	IEnumerator DuckCollide() {
+		audioSource.Play();
+		return null;
 	}
 
-	void OnCollisionEnter2D(Collision2D coll) {
-		if (coll.gameObject == target) {
-			GetComponent<AudioSource>().Play();
+	public void OnCollisionEnter2D(Collision2D coll) {
+		if (coll.gameObject.tag == "PlayerSwan") {
+			StartCoroutine("DuckCollide");
+			if (level == 1) {
+				GameManager.Instance.loadMaze1();
+			} else if (level == 2) {
+				GameManager.Instance.loadMaze2();
+			} else if (level == 3) {
+				GameManager.Instance.loadMaze3();
+			} else {
+				print("EnemyDuck OnCollision is not working");
+			}
 		}
 	}
 }
