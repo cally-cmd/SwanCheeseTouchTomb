@@ -2,12 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Maze1Goal : MonoBehaviour
+public class Goal : MonoBehaviour
 {
+
+    public int level;
 
     public void OnTriggerEnter2D(Collider2D collider2D) {
         if (collider2D.CompareTag("PlayerSwan")) {
-            GameManager.Instance.loadMaze2();
+            if (level == 1) {
+                GameManager.Instance.loadMaze2();
+            } else if (level == 2) { 
+                GameManager.Instance.loadMaze3();
+            } else {
+                print("to do still");
+            }
         }
     }
 

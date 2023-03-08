@@ -127,10 +127,17 @@ public class GameManager : MonoBehaviour
         endScreen.SetActive(true);
     }
 
+    public void loadMaze1() {
+        StartCoroutine(LoadYourAsyncScene("Maze1"));
+    }
+
     public void loadMaze2() {
         StartCoroutine(LoadYourAsyncScene("Maze2"));
     }
 
+    public void loadMaze3() {
+        StartCoroutine(LoadYourAsyncScene("Maze3"));
+    }
 
 
     // Start is called before the first frame update
