@@ -14,7 +14,7 @@ public class DialogActivation : MonoBehaviour
             if (level == 1) {
                 GameManager.Instance.DialogShow("Try to reach the end of the maze while avoiding mean ducks.");
             } else if (level == 2) {
-                GameManager.Instance.DialogShow("There are more foul in this area. Be wary!");
+                GameManager.Instance.DialogShow("The fowl are faster in this area. Be wary!");
             } else {
                 GameManager.Instance.DialogShow("You're nearing the end, but this area is overrun with fowl.");
             }
