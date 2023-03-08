@@ -34,6 +34,12 @@ public class Player : MonoBehaviour
             vertical *= moveLimiter;
         }
 
+        if (horizontal > 0) {
+            transform.localScale = new Vector3(3, 3, 1);
+        } else if (horizontal < 0) {
+            transform.localScale = new Vector3(-3, 3, 1);
+        }
+
         body.velocity = new Vector2(horizontal * runSpeed, vertical * runSpeed);
     }
 }

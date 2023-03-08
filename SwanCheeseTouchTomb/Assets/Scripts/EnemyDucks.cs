@@ -27,6 +27,11 @@ public class EnemyDucks : MonoBehaviour {
 		transform.rotation = Quaternion.Slerp(transform.rotation,
 			q, Time.deltaTime * rotationSpeed);
 
+		if (desired.x > 0) {
+            transform.localScale = new Vector3(3, 3, 1);
+        } else if (desired.x < 0) {
+            transform.localScale = new Vector3(-3, 3, 1);
+        }
 	}
 
 	public void IncreaseSpeed() {
