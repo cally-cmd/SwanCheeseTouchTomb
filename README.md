@@ -26,7 +26,16 @@ This biggest joys will always be when something performs as we expect it to! And
 
 ## Attributions
 
-The sources for everything we used are available in the credits screen in the game!
+Sprites: https://lowich.itch.io/free-water-fowl-sprites
+Tilemap: https://ninjikin.itch.io/grass
+Audio: https://pixabay.com/music/beautiful-plays-sakura-117030/, 
+https://pixabay.com/music/adventure-waterfall-140894/, 
+https://pixabay.com/music/beautiful-plays-my-god-the-grace-instrumental-12009/,
+https://pixabay.com/music/beautiful-plays-mountain-path-125573/, 
+https://pixabay.com/sound-effects/075176-duck-quack-40345/
+TextBox: rectangle clipart PNG Designed By 千图网 from https://pngtree.com/freepng/rectangular-cartoon-hand-painted-fresh-flower-plant-border-dialog-box-beautiful_4024390.html?sol=downref&id=bef
+Background: free background photos from https://pngtree.com/freebackground/pink-flower-plant-floral-background_280966.html?sol=downref&id=bef
+Devs: Justin Grubbs, Rhett Booher, Daniel Burnett
 
 ## Contributions
 
