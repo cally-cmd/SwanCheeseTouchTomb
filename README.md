@@ -30,4 +30,4 @@ The sources for everything we used are available in the credits screen in the ga
 
 ## Contributions
 
-Daniel found or made the assets that were used for the game: audio, background, font, tilemap, and sprite map. He also added the particle system, trail system, and directionality for sprites. I added the information for the credits, help, and partially the end screen. I created the mazes and each of the maps. Rhett programmed the player and camera movement as well as the AI Steering script for the game.
+Daniel found or made the assets that were used for the game: audio, background, font, tilemap, and sprite map. He also added the particle system, trail system, and directionality for sprites. I added the information for the credits, help, and partially the end screen. I created the mazes and each of the maps. Rhett programmed the player and camera movement as well as the AI Steering script for the game. Justin added all of the buttons, scene transitions, level changes, sound effects, and dialog boxes. 
