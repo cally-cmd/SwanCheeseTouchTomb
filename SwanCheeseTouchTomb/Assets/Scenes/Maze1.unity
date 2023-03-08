@@ -978,6 +978,10 @@ PrefabInstance:
       propertyPath: level
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -9036675298480361345, guid: e39ce1e6b75e5564395941f31e31b3ec, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1365852763}
     - target: {fileID: 1446627468717323455, guid: e39ce1e6b75e5564395941f31e31b3ec, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -1089,6 +1093,10 @@ PrefabInstance:
       propertyPath: level
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -9036675298480361345, guid: e39ce1e6b75e5564395941f31e31b3ec, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1365852763}
     - target: {fileID: 1446627468717323455, guid: e39ce1e6b75e5564395941f31e31b3ec, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -1414,6 +1422,10 @@ PrefabInstance:
       propertyPath: level
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -9036675298480361345, guid: e39ce1e6b75e5564395941f31e31b3ec, type: 3}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 1365852763}
     - target: {fileID: -8469464423909080944, guid: e39ce1e6b75e5564395941f31e31b3ec, type: 3}
       propertyPath: MinDistance
       value: 13.915793
